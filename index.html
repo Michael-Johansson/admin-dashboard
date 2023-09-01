@@ -3,7 +3,49 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="style.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Outfit:wght@100;300;400;700&display=swap"
+      rel="stylesheet"
+    />
+    <script
+      type="module"
+      src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"
+      defer
+    ></script>
+    <script
+      nomodule
+      src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.js"
+      defer
+    ></script>
     <title>Admin Dashboard</title>
   </head>
-  <body></body>
+  <body>
+    <div class="container">
+      <header class="header"></header>
+      <aside class="sidebar">
+        <div class="main-links">
+          <ion-icon size="large" name="grid"></ion-icon>
+          <h2>Dashboard</h2>
+          <ul>
+            <li><a href="#"><ion-icon name="home"></ion-icon>Home</a></li>
+            <li><a href="#"><ion-icon name="person"></ion-icon>Profile</a></li>
+            <li><a href="#"><ion-icon name="chatbox-ellipses"></ion-icon>Messages</a></li>
+            <li><a href="#"><ion-icon name="time"></ion-icon>History</a></li>
+            <li><a href="#"><ion-icon name="documents"></ion-icon>Tasks</a></li>
+            <li><a href="#"><ion-icon name="people"></ion-icon>Communities</a></li>
+          </ul>
+        </div>
+        <div class="secondary-links">
+          <ul>
+            <li><a href="#"><ion-icon name="settings"></ion-icon>Settings</a></li>
+            <li><a href="#"><ion-icon name="help-circle"></ion-icon>Support</a></li>
+            <li><a href="#"><ion-icon name="shield-checkmark"></ion-icon>Privacy</a></li>
+          </ul>
+        </div>
+      </aside>
+    </div>
+  </body>
 </html>

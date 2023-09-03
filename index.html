@@ -7,7 +7,7 @@
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link
-      href="https://fonts.googleapis.com/css2?family=Outfit:wght@100;300;400;700&display=swap"
+      href="https://fonts.googleapis.com/css2?family=Rubik:wght@300;400;600&display=swap"
       rel="stylesheet"
     />
     <script
@@ -23,226 +23,44 @@
     <title>Admin Dashboard</title>
   </head>
   <body>
-    <div class="container">
-      <header class="header"></header>
-      <aside class="sidebar">
+    <div class="page-grid">
+      <header class="top-nav">
+        <div class="top-nav-container">
+          <ul class="top-nav-links">
+            <li><a href="#">New</a></li>
+            <li><a href="#">Upload</a></li>
+            <li><a href="#">Share</a></li>
+          </ul>
+          <div class="top-nav-options">
+            <ion-icon name="search-outline"></ion-icon>
+            <input type="text" id="search" />
+            <ion-icon name="notifications"></ion-icon>
+            <span>Mikkej</span>
+            <div class="user-avatar"></div>
+          </div>
+        </div>
+      </header>
+      <aside class="side-nav">
         <div class="logo">
-          <h2><ion-icon size="large" name="grid"></ion-icon>Dashboard</h2>
+          <ion-icon size="large" name="grid"></ion-icon>
+          <h2>Dashboard</h2>
         </div>
-        <div class="main-links">
-          <ul>
-            <li>
-              <a href="#"><ion-icon name="home"></ion-icon>Home</a>
-            </li>
-            <li>
-              <a href="#"><ion-icon name="person"></ion-icon>Profile</a>
-            </li>
-            <li>
-              <a href="#"
-                ><ion-icon name="chatbox-ellipses"></ion-icon>Messages</a
-              >
-            </li>
-            <li>
-              <a href="#"><ion-icon name="time"></ion-icon>History</a>
-            </li>
-            <li>
-              <a href="#"><ion-icon name="documents"></ion-icon>Tasks</a>
-            </li>
-            <li>
-              <a href="#"><ion-icon name="people"></ion-icon>Communities</a>
-            </li>
-          </ul>
-        </div>
-        <div class="secondary-links">
-          <ul>
-            <li>
-              <a href="#"><ion-icon name="settings"></ion-icon>Settings</a>
-            </li>
-            <li>
-              <a href="#"><ion-icon name="help-circle"></ion-icon>Support</a>
-            </li>
-            <li>
-              <a href="#"
-                ><ion-icon name="shield-checkmark"></ion-icon>Privacy</a
-              >
-            </li>
-          </ul>
-        </div>
+        <hr />
+        <ul class="side-links">
+          <li><ion-icon name="home"></ion-icon>Home</li>
+          <li><ion-icon name="person-circle"></ion-icon>Profile</li>
+          <li><ion-icon name="chatbox-ellipses"></ion-icon>Messages</li>
+          <li><ion-icon name="time"></ion-icon>History</li>
+          <li><ion-icon name="list"></ion-icon>Tasks</li>
+          <li><ion-icon name="people-circle"></ion-icon>Communities</li>
+          <hr />
+          <li><ion-icon name="settings"></ion-icon>Settings</li>
+          <li><ion-icon name="help-circle"></ion-icon>Support</li>
+          <li><ion-icon name="shield-checkmark"></ion-icon>Privacy</li>
+        </ul>
       </aside>
-      <main class="main">
-        <div class="article-cards">
-          <article class="article-card">
-            <div>
-              <h3>Super cool project</h3>
-              <p>
-                Lorem ipsum dolor, sit amet consectetur adipisicing elit. Eius
-                sint qui doloribus modi tenetur recusandae quod? Ullam mollitia
-                cum vitae sapiente ut impedit.
-              </p>
-            </div>
-            <div class="article-icons">
-              <ion-icon name="star"></ion-icon>
-              <ion-icon name="eye"></ion-icon>
-              <ion-icon name="share-social"></ion-icon>
-            </div>
-          </article>
-          <article class="article-card">
-            <div>
-              <h3>Super cool project</h3>
-              <p>
-                Lorem ipsum dolor, sit amet consectetur adipisicing elit. Eius
-                sint qui doloribus modi tenetur recusandae quod? Ullam mollitia
-                cum vitae sapiente ut impedit.
-              </p>
-            </div>
-            <div class="article-icons">
-              <ion-icon name="star"></ion-icon>
-              <ion-icon name="eye"></ion-icon>
-              <ion-icon name="share-social"></ion-icon>
-            </div>
-          </article>
-          <article class="article-card">
-            <div>
-              <h3>Super cool project</h3>
-              <p>
-                Lorem ipsum dolor, sit amet consectetur adipisicing elit. Eius
-                sint qui doloribus modi tenetur recusandae quod? Ullam mollitia
-                cum vitae sapiente ut impedit.
-              </p>
-            </div>
-            <div class="article-icons">
-              <ion-icon name="star"></ion-icon>
-              <ion-icon name="eye"></ion-icon>
-              <ion-icon name="share-social"></ion-icon>
-            </div>
-          </article>
-          <article class="article-card">
-            <div>
-              <h3>Super cool project</h3>
-              <p>
-                Lorem ipsum dolor, sit amet consectetur adipisicing elit. Eius
-                sint qui doloribus modi tenetur recusandae quod? Ullam mollitia
-                cum vitae sapiente ut impedit.
-              </p>
-            </div>
-            <div class="article-icons">
-              <ion-icon name="star"></ion-icon>
-              <ion-icon name="eye"></ion-icon>
-              <ion-icon name="share-social"></ion-icon>
-            </div>
-          </article>
-          <article class="article-card">
-            <div>
-              <h3>Super cool project</h3>
-              <p>
-                Lorem ipsum dolor, sit amet consectetur adipisicing elit. Eius
-                sint qui doloribus modi tenetur recusandae quod? Ullam mollitia
-                cum vitae sapiente ut impedit.
-              </p>
-            </div>
-            <div class="article-icons">
-              <ion-icon name="star"></ion-icon>
-              <ion-icon name="eye"></ion-icon>
-              <ion-icon name="share-social"></ion-icon>
-            </div>
-          </article>
-          <article class="article-card">
-            <div>
-              <h3>Super cool project</h3>
-              <p>
-                Lorem ipsum dolor, sit amet consectetur adipisicing elit. Eius
-                sint qui doloribus modi tenetur recusandae quod? Ullam mollitia
-                cum vitae sapiente ut impedit.
-              </p>
-            </div>
-            <div class="article-icons">
-              <ion-icon name="star"></ion-icon>
-              <ion-icon name="eye"></ion-icon>
-              <ion-icon name="share-social"></ion-icon>
-            </div>
-          </article>
-        </div>
-        <aside class="announcements">
-          <div class="announcement-card">
-            <article class="announcement">
-              <h3>Site maintenance</h3>
-              <p>
-                Lorem ipsum dolor sit amet consectetur adipisicing elit.
-                Explicabo molestiae itaque impedit sapiente ipsam, ut, porro
-                natus asperiores architecto, placeat nisi assumenda delectus.
-                Sequi necessitatibus repudiandae maxime quaerat eligendi magni.
-              </p>
-            </article>
-            <article class="announcement">
-              <h3>Site maintenance</h3>
-              <p>
-                Lorem ipsum dolor sit amet consectetur adipisicing elit.
-                Explicabo molestiae itaque impedit sapiente ipsam, ut, porro
-                natus asperiores architecto, placeat nisi assumenda delectus.
-                Sequi necessitatibus repudiandae maxime quaerat eligendi magni.
-              </p>
-            </article>
-            <article class="announcement">
-              <h3>Site maintenance</h3>
-              <p>
-                Lorem ipsum dolor sit amet consectetur adipisicing elit.
-                Explicabo molestiae itaque impedit sapiente ipsam, ut, porro
-                natus asperiores architecto, placeat nisi assumenda delectus.
-                Sequi necessitatibus repudiandae maxime quaerat eligendi magni.
-              </p>
-            </article>
-          </div>
-          <div class="trending-card">
-            <div class="trending-user">
-              <img
-                src="/images/1.png"
-                height="auto"
-                width="40px"
-                alt="profile picture"
-              />
-              <div class="trending-info">
-                <span class="user-name">@Tegan</span>
-                <span class="user-project">World Peace Builder</span>
-              </div>
-            </div>
-            <div class="trending-user">
-              <img
-                src="/images/1.png"
-                height="auto"
-                width="40px"
-                alt="profile picture"
-              />
-              <div class="trending-info">
-                <span class="user-name">@Tegan</span>
-                <span class="user-project">World Peace Builder</span>
-              </div>
-            </div>
-            <div class="trending-user">
-              <img
-                src="/images/1.png"
-                height="auto"
-                width="40px"
-                alt="profile picture"
-              />
-              <div class="trending-info">
-                <span class="user-name">@Tegan</span>
-                <span class="user-project">World Peace Builder</span>
-              </div>
-            </div>
-            <div class="trending-user">
-              <img
-                src="/images/1.png"
-                height="auto"
-                width="40px"
-                alt="profile picture"
-              />
-              <div class="trending-info">
-                <span class="user-name">@Tegan</span>
-                <span class="user-project">World Peace Builder</span>
-              </div>
-            </div>
-          </div>
-        </aside>
+      <main class="main-content">
+        <h1>https://s-bonanno.github.io/odin-dashboard/</h1>
       </main>
     </div>
   </body>

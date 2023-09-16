@@ -10,6 +10,7 @@
   --background-color: rgb(246 247 251);
   --card-background: rgb(255, 255, 255);
   --border-radius: 10px;
+  --hover-color: #368bda;
 }
 
 body {
@@ -26,10 +27,6 @@ hr {
 a {
   color: var(--light-text);
   text-decoration: none;
-}
-
-a:hover {
-  color: rgb(45, 109, 212);
 }
 
 .page-grid {
@@ -57,12 +54,21 @@ a:hover {
 .top-nav-links {
   display: flex;
   gap: 20px;
+  align-items: center;
   list-style: none;
 }
 
 .top-nav-options {
   display: flex;
   gap: 20px;
+  align-items: center;
+}
+
+.top-nav-options #search {
+  outline: none;
+  border: 1px solid var(--light-text);
+  border-radius: var(--border-radius);
+  padding: 4px 8px;
 }
 
 .side-nav {
@@ -92,4 +98,87 @@ a:hover {
 
   display: grid;
   gap: 20px;
+}
+
+.side-links li {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+
+.side-links li ion-icon {
+  font-size: 1.4rem;
+  transition: all 0.3s ease;
+}
+
+.side-links ion-icon {
+  color: white;
+}
+
+.side-links a:hover {
+  color: white;
+  transition: all 0.3s ease;
+}
+
+.main-content {
+  display: grid;
+  grid-template-columns: 2.5fr 1fr;
+}
+
+.projects {
+  display: grid;
+  grid-auto-rows: max-content;
+  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+  gap: 20px;
+  overflow: scroll;
+  padding: 10px;
+}
+
+.projects-heading {
+  grid-column: 1 / -1;
+  font-weight: 400;
+  color: var(--dark-text);
+}
+
+.project-card {
+  display: grid;
+  gap: 10px;
+  background-color: var(--card-background);
+  padding: 20px;
+  border-radius: var(--border-radius);
+  box-shadow: 0px 3px 15px -5px rgba(0, 0, 0, 0.2);
+}
+
+.project-img {
+  width: 100%;
+  height: 80px;
+  margin-bottom: 15px;
+  border-radius: var(--border-radius);
+  background: linear-gradient(#598dd7, #253f73);
+}
+
+.project-card p {
+  font-size: 0.9rem;
+  font-weight: lighter;
+  letter-spacing: 0.5px;
+  color: var(--light-text);
+}
+
+.project-card h3 {
+  font-weight: 400;
+  letter-spacing: 1px;
+  color: var(--dark-text);
+}
+
+.project-icons {
+  display: flex;
+  justify-content: flex-end;
+  gap: 15px;
+  font-size: 1.3rem;
+  color: var(--dark-text);
+}
+
+.project-card ion-icon:hover {
+  color: var(--hover-color);
+  cursor: pointer;
 }

@@ -221,7 +221,7 @@ a {
   border-color: var(--light-text);
 }
 
-.announcements a {
+.announcements-card a {
   text-decoration: underline;
 }
 
